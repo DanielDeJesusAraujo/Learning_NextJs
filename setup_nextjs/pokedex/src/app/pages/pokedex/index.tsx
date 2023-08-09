@@ -1,4 +1,5 @@
-import PokeCard from "@/app/components/pokeCard";
+import PokeCard from "../../components/pokeCard";
+import styles from './page.module.css';
 
 interface PokemonListResponse {
   count: number;
@@ -12,7 +13,7 @@ interface PokemonListResponse {
 
 async function getData() {
   try {
-    const res = await fetch('https://pokeapi.co/api/v2/pokemon?limit=151');
+    const res = await fetch('https://pokeapi.co/api/v2/pokemon?limit=100');
     const data: PokemonListResponse = await res.json();
     return data.results
   } catch (error) {
@@ -23,11 +24,11 @@ async function getData() {
 async function Pokedex() {
   const pokemons = await getData();
   return (
-    <main>
+    <section className={styles.main_pokedex}>
       {pokemons?.map((pokemon) => (
         <PokeCard key={pokemon.name} url={pokemon.url} />
       ))}
-    </main>
+    </section>
   );
 }
 

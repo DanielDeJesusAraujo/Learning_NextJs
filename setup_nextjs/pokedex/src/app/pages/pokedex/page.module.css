@@ -1,0 +1,13 @@
+.main_pokedex {
+  padding-top: 6em;
+  background-image: url('../../assets/background.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}

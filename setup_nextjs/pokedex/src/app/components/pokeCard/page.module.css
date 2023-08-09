@@ -1,12 +1,124 @@
 .card{
-  width: 6em;
-  height: 10em;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  transition: var(--transition);
+  background-image: url('../../assets/normal.png');
+  background-position: center center;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-attachment: repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 12em;
+  height: 16em;
+  z-index: 1;
   cursor: pointer;
-  border: 1px solid red;
+}
+
+@keyframes pouse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+  
+}
+
+@keyframes semirotate {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.5);
+  }
+  75% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.card img {
+  height: max-content;
+  /* width: 100%; */
+}
+
+.card img:hover {
+  animation: semirotate 1s forwards;
+}
+
+.card:hover {
+  animation: pouse .5s forwards;
+}
+
+.name {
+  text-align: start;
+  background-image: linear-gradient(140deg, var(--black) 70%, transparent 30%);
+  background-position: 100% 0;
+  color: var(--foreground);
+}
+
+.height {
+  background-image: linear-gradient(45deg, var(--yellow) 60%, transparent 40%);
+}
+
+.weight {
+  background-image: linear-gradient(135deg, var(--black) 90%, transparent 20%);
+  color: aliceblue;
+}
+
+.normal {
+  background-image: url('../../assets/normal.png');
+}
+
+.water {
+  background-image: url('../../assets/water.png');
+}
+
+.fire {
+  background-image: url('../../assets/fire.png');
+}
+
+.grass {
+  background-image: url('../../assets/grass.png');
+}
+
+.electric {
+  background-image: url('../../assets/electric.png');
+}
+
+.ice {
+  background-image: url('../../assets/ice.png');
+}
+
+.bug {
+  background-image: url('../../assets/normal.png');
+}
+
+.flying {
+  background-image: url('../../assets/flying.png');
+}
+
+.poison {
+  background-image: url('../../assets/poison.png');
+}
+
+.ground {
+  background-image: url('../../assets/ground.png');
+}
+
+.dragon {
+  background-image: url('../../assets/fire.png');
+}
+
+.rock {
+  background-image: url('../../assets/rock.png');
+}
+
+
+.normal, .fire, .water, .grass, .electric, .ice, .bug, .poison, .ground, .flying, .psychic, .rock {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: repeat;
 }

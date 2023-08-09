@@ -1,4 +1,4 @@
-import MainContainer from './MainContainer/page'
+import MainContainer from './pages/MainContainer/page'
 import Pokedex from './pages/pokedex'
 
 export default function Home() {

@@ -1,0 +1,144 @@
+.details {
+  width: 100%;
+  height: 100vh;
+  background-image: url('../../assets/normal.png');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.container {
+  display: flex;
+  color: var(--foreground);
+  font-family: var(--font-default);
+  font-size: large;
+  height: 100vh;
+  background-image: linear-gradient(90deg, transparent 40%, rgba(0, 0, 0, 0.74) 80%);
+}
+
+.container h2 {
+  margin-bottom: 2em;
+  text-align: center;
+  background-image: linear-gradient(140deg, transparent 20%, rgb(255, 0, 0) 20%, rgb(248, 182, 0) 90%, transparent 20%);
+  background-position-x: left;
+  background-position-y: top;
+  background-size: 100%;
+}
+
+.image {
+  flex-basis: 35vw;
+  text-shadow: var(--shadow);
+}
+
+.types {
+  flex-basis: 35vw;
+  text-shadow: var(--shadow);
+}
+
+.types li {
+  list-style: none;
+}
+
+.stats li {
+  list-style: none;
+}
+
+.stats {
+  flex-basis: 35vw;
+  text-shadow: var(--shadow);
+}
+
+.normal {
+  background-image: url('../../assets/normal.png');
+}
+
+.water {
+  background-image: url('../../assets/water.png');
+}
+
+.fire {
+  background-image: url('../../assets/fire.png');
+}
+
+.grass {
+  background-image: url('../../assets/grass.png');
+}
+
+.electric {
+  background-image: url('../../assets/electric.png');
+}
+
+.ice {
+  background-image: url('../../assets/ice.png');
+}
+
+.bug {
+  background-image: url('../../assets/normal.png');
+}
+
+.flying {
+  background-image: url('../../assets/flying.png');
+}
+
+.poison {
+  background-image: url('../../assets/poison.png');
+}
+
+.ground {
+  background-image: url('../../assets/ground.png');
+}
+
+.dragon {
+  background-image: url('../../assets/fire.png');
+}
+
+.rock {
+  background-image: url('../../assets/rock.png');
+}
+
+.normal,
+.fire,
+.water,
+.grass,
+.electric,
+.ice,
+.bug,
+.poison,
+.ground,
+.flying,
+.psychic,
+.rock {
+  /* background-position: center center; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: repeat;
+}
+
+.nav {
+  margin-top: 3em;
+  margin-left: 1em;
+  display: flex;
+  gap: 1em;
+}
+
+.nav a {
+  text-decoration: none;
+  color: var(--foreground);
+  padding: 1em;
+  font-size: 1.5em;
+  background-image: linear-gradient(140deg, transparent 10%, var(--orange) 10%, var(--red) 90%, transparent 10%);
+}
+
+@keyframes destacar {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.nav a:hover {
+  animation: destacar .3s forwards;
+}
