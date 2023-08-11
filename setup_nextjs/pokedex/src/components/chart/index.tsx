@@ -27,10 +27,8 @@ export default function Chart({data}: {data: IData[]}) {
       data={data}
     >
       <RadialBar
-        minAngle={15}
         label={{ position: "insideStart", fill: "#fff" }}
         background
-        clockWise
         dataKey="uv"
       />
       <Legend

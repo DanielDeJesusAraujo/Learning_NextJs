@@ -1,19 +1,17 @@
 'use client'
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import getById from '@/app/fetchApi/getById'
 import IPokemon, { IBaseStats } from '@/app/interfaces/IPokemon'
 import Image from 'next/image'
 import styles from './page.module.css'
-import Chart, { IData } from '@/app/components/chart'
+import Chart, { IData } from '@/components/chart'
 import Link from 'next/link'
 
 function Details({ params }: { params: { id: string } }) {
   const [pokemon, setPokemon] = useState<IPokemon>()
   const [data, setData] = useState<IData[]>()
 
-  // lista de cores
-
-  useEffect(() => {
+  useEffect(() => {    
     const colorsDegraded = [
       'rgb(238, 255, 0)',
       'rgb(255, 187, 0)',
@@ -40,8 +38,6 @@ function Details({ params }: { params: { id: string } }) {
       }
     }
     get()
-    console.log(id);
-
   }, [params.id])
 
   if (pokemon?.name) {
