@@ -1,4 +1,3 @@
-import Header from '@/components/header/page'
 import React from 'react'
 import styles from './page.module.css'
 import MainContainer from '../pages/MainContainer/page'

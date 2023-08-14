@@ -1,5 +1,5 @@
 'use client'
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import getById from '@/app/fetchApi/getById'
 import IPokemon, { IBaseStats } from '@/app/interfaces/IPokemon'
 import Image from 'next/image'
