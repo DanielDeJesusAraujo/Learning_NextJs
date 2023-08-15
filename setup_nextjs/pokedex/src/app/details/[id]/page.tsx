@@ -1,10 +1,10 @@
 'use client'
 import React, { useEffect, useState } from 'react'
-import getById from '@/app/fetchApi/getById'
-import IPokemon, { IBaseStats } from '@/app/interfaces/IPokemon'
+import getById from '../../fetchApi/getById'
+import IPokemon, { IBaseStats } from '../../interfaces/IPokemon'
 import Image from 'next/image'
 import styles from './page.module.css'
-import Chart, { IData } from '@/components/chart'
+import Chart, { IData } from '../../components/chart'
 import Link from 'next/link'
 
 function Details({ params }: { params: { id: string } }) {

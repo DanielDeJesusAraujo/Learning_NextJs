@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './page.module.css'
-import MainContainer from '../pages/MainContainer/page'
+import MainContainer from '../components/MainContainer'
 
 function About() {
   return (

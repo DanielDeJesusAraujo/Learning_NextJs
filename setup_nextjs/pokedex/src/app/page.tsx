@@ -1,9 +1,8 @@
 'use client'
-import MainContainer from './pages/MainContainer/page'
-import Pokedex from './pages/pokedex'
+import MainContainer from './components/MainContainer'
+import Pokedex from './components/pokedex'
 
 export default function Home() {
-  console.log('Home')
   return (
     <MainContainer>
       <Pokedex />

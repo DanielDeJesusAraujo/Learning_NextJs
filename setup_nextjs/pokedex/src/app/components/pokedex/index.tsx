@@ -1,6 +1,6 @@
 'use client'
 import { useEffect, useState } from "react";
-import PokeCard from "../../../components/pokeCard";
+import PokeCard from "../../components/pokeCard";
 import styles from './page.module.css';
 import { PokemonListResponse } from "@/app/interfaces/IPokemon";
 import getNext from "@/app/utils/getNext";
