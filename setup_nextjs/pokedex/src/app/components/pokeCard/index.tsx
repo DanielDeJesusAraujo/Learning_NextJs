@@ -1,7 +1,7 @@
 'use client'
 import Image from 'next/image'
 import styles from './page.module.css'
-import { useContext, useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import getPokemon from '@/app/fetchApi/getPokemon'
 import IPokemon from '@/app/interfaces/IPokemon'
@@ -18,8 +18,6 @@ function PokeCard({ url }: { url: string }) {
     get()
   }, [url])
   
-  
-
   const handleClick = () => {
     router.push(`/details/${pokemon?.id}`)
   }

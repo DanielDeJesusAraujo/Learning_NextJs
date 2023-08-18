@@ -5,10 +5,6 @@ import styles from './page.module.css';
 import { PokemonListResponse } from "@/app/interfaces/IPokemon";
 import getNext from "@/app/utils/getNext";
 
-
-
-
-
 function Pokedex() {
   const [pokemonsList, setPokemonsList] = useState<PokemonListResponse['results']>([])
   const [nextPage, setNextPage] = useState<string | null>('')

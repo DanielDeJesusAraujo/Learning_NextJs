@@ -7,6 +7,14 @@ import styles from './page.module.css'
 import Chart, { IData } from '../../components/chart'
 import Link from 'next/link'
 
+export async function generateStaticParams() {
+  // const res = await fetch(` https://pokeapi.co/api/v2/pokemon/${id}`)
+  // const data = await res.json()
+
+ 
+  return [{ id: '1' }, { id: '2' }, { id: '3' }]
+}
+
 function Details({ params }: { params: { id: string } }) {
   const [pokemon, setPokemon] = useState<IPokemon>()
   const [data, setData] = useState<IData[]>()
